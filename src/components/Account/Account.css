@@ -1,14 +1,21 @@
-
+.main-wrapper
+{
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    padding: 16px 0 16px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 50px;
+}
 .create-account-wrapper
 {
    position: fixed;
-   top: 4%;
-   left: 58%;
+   top: 2%;
+   left: 50%;
    transform: translate(-50%);
 }
 .create-account-wrapper img
 {
-    width: 30%;
+    width: 20%;
     height: 20%;
 }
 .create-account-wrapper h2
@@ -31,16 +38,16 @@
 }
 .create-account-wrapper .btn
 {
-    padding: 4px 118px;
+    padding: 4px 114px;
 }
 .create-account-wrapper ul li
 {
     list-style-type: none;
 }
-.create-account-wrapper ul li a
+.create-account-wrapper ul li link
 {
     text-decoration: none;
-    margin-left: 100px;
+    margin-left: 42px;
 }
 
 

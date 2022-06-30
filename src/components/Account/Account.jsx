@@ -4,8 +4,11 @@ import logo from '../../assets/logo.png'
 import {Link} from 'react-router-dom'
 
 const Account = () => {
+
+  
   return (
     <div className='create-account-wrapper'>
+   <div className='main-wrapper'>
    <img src={logo} alt=''/>
     <h2>Creaate an account</h2>
     <p>A beautiful and powerful system for driving schools.</p>
@@ -25,6 +28,7 @@ const Account = () => {
                 <Link to='/Login'>Login Now</Link>
               </li>
             </ul>
+   </div>
 </div>
  
   )

@@ -1,0 +1,63 @@
+section
+{
+    position: fixed;
+    left: 0;
+    background-color: #212121;
+    height: 100vh;
+    width: 18vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.top
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+.toggle
+{
+    display: none;
+}
+.brand
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.links
+{
+    display: flex;
+    justify-content: center;
+}
+ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.links li
+{
+    padding: 0.6rem 3rem;
+    border-radius: 0.6rem;
+    font-size: 16px;
+}
+.links li:hover
+{
+    background-color: rgb(224, 178, 49);
+}.links a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+.links i
+{
+    padding: 1rem;
+}
+.active
+{
+    background-color: rgb(224, 178, 49);
+}
