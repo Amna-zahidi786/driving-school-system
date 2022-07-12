@@ -17,8 +17,8 @@ export default function Sidebar() {
         <Link onClick={() => setCurrentLink(2)} className={currentLink === 2 ? "active" : ""} to='/schedule'><i class="bi bi-calendar-date"></i>Schedule</Link>
         <a onClick={() => setCurrentLink(3)} className={currentLink === 3 ? "active" : ""} href="#"><i  class="	fas fa-book-open"></i>Courses</a>
         <a onClick={() => setCurrentLink(4)} className={currentLink === 4 ? "active" : ""} href="#"><i class="	fas fa-address-card"></i>Student</a>
-        <a onClick={() => setCurrentLink(5)} className={currentLink === 5 ? "active" : ""} href="#"><i class="fas fa-code-branch"></i>Branches</a>
-        <a onClick={() => setCurrentLink(6)} className={currentLink === 6 ? "active" : ""} href="#"> <i class="	fas fa-school"></i>School</a>
+        <Link onClick={() => setCurrentLink(5)} className={currentLink === 5 ? "active" : ""} to='/Branches'><i class="fas fa-code-branch"></i>Branches</Link>
+        <Link onClick={() => setCurrentLink(6)} className={currentLink === 6 ? "active" : ""} to='/School'> <i class="	fas fa-school"></i>School</Link>
         <a onClick={() => setCurrentLink(7)} className={currentLink === 7 ? "active" : ""} href="#"> <i class="bi bi-gear"></i>Setting</a>
       </div>
      

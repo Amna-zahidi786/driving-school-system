@@ -21,7 +21,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="student">
+                        <div className="income">
                             <i class="fas fa-graduation-cap"></i>
                             <h1>45,121</h1>
                             <h4>Income</h4>
@@ -29,7 +29,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="student">
+                        <div className="unpaid-voices">
                             <i class="fas fa-graduation-cap"></i>
                             <h1>343,222</h1>
                             <h4>Unpaid voices</h4>
@@ -37,7 +37,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className="col-md-3">
-                        <div className="student">
+                        <div className="attendence">
                             <i class="fas fa-graduation-cap"></i>
                             <h1>67%</h1>
                             <h4>Class attendence</h4>

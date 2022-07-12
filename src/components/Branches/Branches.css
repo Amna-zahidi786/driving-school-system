@@ -1,0 +1,69 @@
+div.content {
+    margin-left: 290px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+ 
+  .main-heading h1
+  {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 70px;
+    padding: 1rem 2rem;
+    box-shadow: 10px 10px rgb(243, 240, 240);
+    font-weight: 700;
+  }
+  .branches h2
+  {
+    font-size: 28px;
+    margin-top: 50px;
+    color: grey;
+  }
+  .branches h4
+  {
+    color: rgb(75, 72, 72);
+  }
+  .head-quarter h4
+  {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .head-quarter span
+  {
+    color: rgb(102, 99, 99);
+  }
+  .head-quarter ul
+  {
+    margin: 0;
+    padding: 0;
+    color: rgb(151, 153, 153);
+  }
+  .head-quarter ul li
+  {
+    list-style-type: none;
+  }
+  .head-quarter i
+  {
+    padding: 8px;
+    color: rgb(88, 84, 84);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }

@@ -6,6 +6,8 @@ import Password from './components/Password/Password'
 import Sidebar from './components/Sidebar'
 import Schedule from './components/schedule/Schedule'
 import Dashboard from './components/Dashboard/Dashboard'
+import Branches from './components/Branches/Branches'
+import School from './components/School/School'
 
 
 const App = () => { 
@@ -23,6 +25,8 @@ const App = () => {
     <Route path='/Sidebar' element={<Sidebar/>}/>
     <Route path='/schedule' element={<Schedule/>}/>
     <Route path='/Dashboard' element={<Dashboard/>}/>
+    <Route path='/Branches' element={<Branches/>}/>
+    <Route path='/School' element={<School/>}/>
   </Routes>
   </BrowserRouter>
   )
