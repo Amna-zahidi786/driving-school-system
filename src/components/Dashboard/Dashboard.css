@@ -56,7 +56,7 @@ body {
   {
     background-color: #ffffff;
     text-align: center;
-    padding: 4rem 4rem;
+    padding: 4rem 5rem;
     box-shadow: 10px 10px rgb(243, 240, 240);
     border-radius: 40px;
     margin-top: 12px;
@@ -64,16 +64,99 @@ body {
   .content .student h1
   {
     font-weight: 700;
-    font-size: 4ss0px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
   }
   .content .student i
   {
+    font-size: 40px;
+    color: rgb(89, 136, 236);
+  }
+
+
+
+
+  .content .income
+  {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 10px 10px rgb(243, 240, 240);
+    border-radius: 40px;
+    margin-top: 12px;
+  }
+  .content .income h1
+  {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+  }
+  .content .income a
+  {
+    color: rgb(235, 197, 32);
+  }
+  .content .income i
+  {
     font-size: 30px;
     color: rgb(235, 209, 95);
   }
   
+
+
+ .content .unpaid-voices
+  {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 10px 10px rgb(243, 240, 240);
+    border-radius: 40px;
+    margin-top: 12px;
+  }
+  .content .unpaid-voices h1
+  {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+  }
+  .content .unpaid-voices a
+  {
+    color: rgb(221, 31, 24);
+  }
+  .content .unpaid-voices i
+  {
+    font-size: 30px;
+    color: rgb(221, 55, 49);
+  }
+
+
+
+
+
+  .content .attendence
+  {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 4.5rem 1rem;
+    box-shadow: 10px 10px rgb(243, 240, 240);
+    border-radius: 40px;
+    margin-top: 12px;
+  }
+  .content .attendence h1
+  {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+  }
+  .content .attendence a
+  {
+    color: rgb(48, 201, 74);
+  }
+  
+
   .student-growth h1
   {
     font-size: 60px;

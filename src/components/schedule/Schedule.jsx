@@ -6,7 +6,7 @@ export default function schedule() {
    
     <div className="content">
     <h1>
-    Amna
+Schedule
     </h1>
   </div>
   )

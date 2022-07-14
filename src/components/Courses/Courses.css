@@ -3,7 +3,6 @@ div.content {
     padding: 1px 16px;
     height: 1000px;
   }
- 
   .main-heading h1
   {
     text-align: center;
@@ -13,42 +12,27 @@ div.content {
     box-shadow: 10px 10px rgb(243, 240, 240);
     font-weight: 700;
   }
-  .branches h2
+  .content .courses-wrapper
   {
-    font-size: 28px;
-    margin-top: 50px;
-    color: grey;
+    margin-top: 12px;
   }
-  .branches h4
+  .content .courses-wrapper img
   {
-    color: rgb(75, 72, 72);
+    
+    border-radius: 120px;
+    padding: 20px;
+    box-shadow: 10px 10px rgb(243, 240, 240);
   }
-  .head-quarter h4
+  .content .courses-wrapper h3
   {
-    font-size: 18px;
+    text-align: center;
     font-weight: 700;
+    color: rgb(160, 156, 156);
+   
   }
-  .head-quarter span
-  {
-    color: rgb(102, 99, 99);
-  }
-  .head-quarter ul
-  {
-    margin: 0;
-    padding: 0;
-    color: rgb(151, 153, 153);
-  }
-  .head-quarter ul li
-  {
-    list-style-type: none;
-  }
-  .head-quarter i
-  {
-    padding: 8px;
-    color: rgb(88, 84, 84);
-    font-size: 20px;
-    font-weight: 700;
-  }
+  
+  
+  
   
   
   @media screen and (max-width: 700px) {
@@ -56,7 +40,7 @@ div.content {
       width: 100%;
       height: auto;
       position: relative;
-    }s
+    }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
   }

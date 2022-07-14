@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Dashboard.css"
 import student_growth from '../../assets/student_growth.png'
+import attendance from '../../assets/attendance.png'
 
 export default function Dashboard() {
     return (
-        <div class="content">
+        <div className="content">
             <div className="main-heading">
                 <h1>Driving School Mangement System</h1>
             </div>
@@ -22,7 +23,7 @@ export default function Dashboard() {
                     </div>
                     <div className="col-md-3">
                         <div className="income">
-                            <i class="fas fa-graduation-cap"></i>
+                        <i class="bi bi-cash"></i>
                             <h1>45,121</h1>
                             <h4>Income</h4>
                             <a href="">11%</a>
@@ -30,7 +31,7 @@ export default function Dashboard() {
                     </div>
                     <div className="col-md-3">
                         <div className="unpaid-voices">
-                            <i class="fas fa-graduation-cap"></i>
+                        <i class="bi bi-currency-dollar"></i>
                             <h1>343,222</h1>
                             <h4>Unpaid voices</h4>
                             <a href="">11%</a>
@@ -38,7 +39,7 @@ export default function Dashboard() {
                     </div>
                     <div className="col-md-3">
                         <div className="attendence">
-                            <i class="fas fa-graduation-cap"></i>
+                           <img src={attendance} alt="" />
                             <h1>67%</h1>
                             <h4>Class attendence</h4>
                             <a href="">11%</a>
@@ -46,7 +47,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
-
+            
             <div className="student-growth mt-5">
                 <h3>Student Growth</h3>
                 <div className="row">

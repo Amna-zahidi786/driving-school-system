@@ -14,16 +14,17 @@ body {
 }
 .sidebar img
 {
-  margin-bottom: 24px;
  
+ vertical-align: middle;
+ margin-top: 12px;
+ padding-left: 12px;
 }
 .sidebar a {
   display: block;
   color: rgb(255, 253, 253);
   padding: 16px;
   text-decoration: none;
-  border-bottom: 1px solid rgba(241, 237, 237, 0.5);
-  
+   border-bottom: 1px solid transparent; 
 }
  
 .sidebar a.active {

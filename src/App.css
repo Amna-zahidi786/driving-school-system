@@ -39,4 +39,6 @@
 body
 {
   border-color: #282c34;
+  overflow-y: hidden; 
+  overflow-x: hidden
 }
