@@ -33,7 +33,7 @@ const Login = () => {
     })
 
 const navigate = useNavigate();
-const goToSideBar = ()=>{
+const goToDashboard = ()=>{
     navigate('/Dashboard');
 };
 
@@ -50,7 +50,7 @@ const goToSideBar = ()=>{
                     <label for="password">Password</label><br></br>
                     <input type="password" name="password" onChange={handleChange} onBlur={handleBlur} value={values.password} required /><br /><br />
                     <p style={{ color: "red" }}>{touched.password && errors ? errors.password : null}</p>
-                 <button onClick={()=> goToSideBar()} className='btn' type="submit" class="btn btn-primary">Login Now</button>
+                 <button onClick={()=> goToDashboard()} className='btn' type="submit" class="btn btn-primary">Login Now</button>
                     <ul className='accounts'>
                         <li><Link to='/Account'>Create Account</Link></li>
                         <li><Link to='/Password'>forget password?</Link></li>

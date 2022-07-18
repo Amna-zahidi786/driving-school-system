@@ -9,9 +9,10 @@ import Dashboard from './components/Dashboard/Dashboard'
 import Branches from './components/Branches/Branches'
 import School from './components/School/School'
 import Courses from './components/Courses/Courses'
-import Header from './Header/Header'
 import Fleet from './components/Fleet/Fleet'
 import Notification from './components/Notification/Notification'
+import Header from './components/Header/Header'
+
 
 
 const App = () => { 
@@ -20,7 +21,9 @@ const App = () => {
     
  
   <BrowserRouter>
+ 
    <Sidebar/>
+  
   <Routes>
    
     <Route path='/' element={<Login/>}/>
@@ -35,7 +38,7 @@ const App = () => {
     <Route path='/School' element={<School/>}/>
     <Route path='/Fleet' element={<Fleet/>}/>
     <Route path='/Courses' element={<Courses/>}/>
-
+   
   </Routes>
   </BrowserRouter>
   )

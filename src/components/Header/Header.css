@@ -1,0 +1,31 @@
+.header-wrapper
+{
+    display: flex;
+justify-content: end;
+    align-items: flex-end;
+}
+.header-wrapper ul
+{
+    display: flex;
+    list-style-type: none;
+}
+.header-wrapper ul li
+{
+    margin: 4px 20px;
+}
+.header-wrapper i
+{
+    font-size: 20px;
+    color: gray;
+}
+.header-wrapper img
+{
+  border: 1px solid black;
+  border-radius: 20px;
+  
+}
+.header-wrapper select
+{
+    color: rgb(97, 94, 94);
+    
+}

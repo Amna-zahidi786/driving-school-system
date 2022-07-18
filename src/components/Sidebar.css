@@ -19,24 +19,22 @@ body {
  margin-top: 12px;
  padding-left: 12px;
 }
-.sidebar a {
+ .sidebar a {
   display: block;
   color: rgb(255, 253, 253);
   padding: 16px;
   text-decoration: none;
-   border-bottom: 1px solid transparent; 
 }
  
 .sidebar a.active {
   background-color: #73737b;
   color: rgb(253, 253, 253);
-
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #73737b;
   color: rgb(255, 255, 255);
-
+  
 }
 .sidebar i
 {
