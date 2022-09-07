@@ -1,68 +1,21 @@
 import React from 'react'
-import "./Dashboard.css"
-import student_growth from '../../assets/student_growth.png'
-import attendance from '../../assets/attendance.png'
+import './Dashboard.css'
 
-export default function Dashboard() {
+
+const Dashboard = ({ prod }) => {
     return (
-        <div className="content">
-            <div className="main-heading">
-                <h1>Driving School Mangement System</h1>
-            </div>
-            <div className="dsahboard mt-5">
-                <h3>Dashboard</h3>
-
-                <div className="row">
-                    <div className="col-md-3">
-                        <div className="student">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h1>48</h1>
-                            <h4>Total Student</h4>
-                            <a href="">11%</a>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="income">
-                        <i class="bi bi-cash"></i>
-                            <h1>45,121</h1>
-                            <h4>Income</h4>
-                            <a href="">11%</a>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="unpaid-voices">
-                        <i class="bi bi-currency-dollar"></i>
-                            <h1>343,222</h1>
-                            <h4>Unpaid voices</h4>
-                            <a href="">11%</a>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="attendence">
-                           <img src={attendance} alt="" />
-                            <h1>67%</h1>
-                            <h4>Class attendence</h4>
-                            <a href="">11%</a>
-                        </div>
-                    </div>
+        <>
+            <div className="col-md-3 mt-5">
+                <div className="student">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>{prod.title}</h1>
+                    <h4>{prod.description}</h4>
+                    <a href="">{prod.rating}</a>
                 </div>
             </div>
-            
-            <div className="student-growth mt-5">
-                <h3>Student Growth</h3>
-                <div className="row">
-                    <div className="col-md-6 mt-5">
-                        <h1>8</h1>
-                        <h4>New Students (Last 30 Days)</h4>
-                        <h5>You have <span>22% Growth</span> in comparison to the previous month.</h5>
-                        <h5>Payments perfomance has had a <span>14% perfomance</span> in comparison to the previous month.</h5>
-                    </div>
+        </>
 
-                    <div className="col-md-6 mt-5">
-                        <img src={student_growth} alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
     )
 }
+
+export default Dashboard

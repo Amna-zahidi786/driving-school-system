@@ -10,16 +10,6 @@ body {
     padding: 1px 16px;
     height: 1000px;
   }
-  .main-heading h1
-  {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 70px;
-    padding: 1rem 2rem;
-    box-shadow: 10px 10px rgb(243, 240, 240);
-    font-weight: 700;
-  }
-  
   .content .student
   {
     background-color: #ffffff;
@@ -36,110 +26,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
   }
+  .content .student a
+  {
+    text-decoration: none;
+    color: rgb(53, 51, 51);
+  }
   .content .student i
   {
-    font-size: 40px;
-    color: rgb(89, 136, 236);
+    font-size: 24px;
+    color: rgb(236, 202, 89);
   }
 
 
 
 
-  .content .income
-  {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 4rem 1rem;
-    box-shadow: 10px 10px rgb(243, 240, 240);
-    border-radius: 40px;
-    margin-top: 12px;
-  }
-  .content .income h1
-  {
-    font-weight: 700;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-  }
-  .content .income a
-  {
-    color: rgb(235, 197, 32);
-  }
-  .content .income i
-  {
-    font-size: 30px;
-    color: rgb(235, 209, 95);
-  }
-  
-
-
- .content .unpaid-voices
-  {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 4rem 1rem;
-    box-shadow: 10px 10px rgb(243, 240, 240);
-    border-radius: 40px;
-    margin-top: 12px;
-  }
-  .content .unpaid-voices h1
-  {
-    font-weight: 700;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-  }
-  .content .unpaid-voices a
-  {
-    color: rgb(221, 31, 24);
-  }
-  .content .unpaid-voices i
-  {
-    font-size: 30px;
-    color: rgb(221, 55, 49);
-  }
-
-
-
-
-
-  .content .attendence
-  {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 4.5rem 1rem;
-    box-shadow: 10px 10px rgb(243, 240, 240);
-    border-radius: 40px;
-    margin-top: 12px;
-  }
-  .content .attendence h1
-  {
-    font-weight: 700;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-  }
-  .content .attendence a
-  {
-    color: rgb(48, 201, 74);
-  }
-  
-
-  .student-growth h1
-  {
-    font-size: 60px;
-    font-weight: 700;
-   
-  }
-  .student-growth h4
-  {
-    font-weight: 600;
-  }
-  .student-growth span
-  {
-    color: orange;
-  }
-  
   
   
   

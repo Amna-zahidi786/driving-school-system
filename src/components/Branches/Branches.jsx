@@ -1,12 +1,13 @@
 import React from 'react'
+import Header from '../Header/Header'
 import './Branches.css'
 
 export default function Branches() {
   return (
    <div className='content'>
-    <div className="main-heading">
-                <h1>Driving School Mangement System</h1>
-            </div>
+   
+                <Header/>
+          
             <div className="branches mt-5">
                 <h2>Branches</h2>
                 <h4>These are branches of your school</h4>

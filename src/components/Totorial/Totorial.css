@@ -3,15 +3,15 @@ div.content {
     padding: 1px 16px;
     height: 1000px;
   }
- 
-.transportation 
+  
+.tutorial 
 {
     margin-top: 44px;
 }
-.transportation table button
+.tutorial table button
 {
     padding: 4px 16px;
-    margin: 8px 12px;
+    margin: 6px 4px;
     background-color: rgb(75, 105, 150);
     color: #ffffff;
     border: 0.5px solid transparent;
@@ -19,14 +19,13 @@ div.content {
     border-radius: 50px;
     font-weight: bold;
 }
-.transportation table th
+.tutorial table th
 {
   background-color: rgb(35, 148, 163);
   color: #ffffff;
   margin: 12px;
-  font-size: 15px;
 }
-.transportation .edit-menu
+.tutorial .edit-menu
 {
     margin: 8px 20px;
     background-color: rgb(75, 105, 150);
@@ -37,27 +36,11 @@ div.content {
     font-weight: bold;
     text-decoration: none;
 }
-.transportation i
+.tutorial i
 {
     padding: 8px;
     color: white;
 }
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 32px;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 20px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f3f3f3;
-  }
 
 
 

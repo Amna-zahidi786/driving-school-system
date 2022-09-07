@@ -4,38 +4,48 @@ import logo from "../../assets/logo.png"
 import { Link } from 'react-router-dom'
 import { useFormik } from 'formik';
 import * as yup from 'yup'
-import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 
-const database = {
-        username: "amnazahidi787@gmail.com",
-        password: "password1"
-    }
+
+
 
 const Login = () => {
 
+    let navigate = useNavigate();
+
+
     const { handleSubmit, handleChange, handleBlur, handleReset, values, errors, touched } = useFormik({
         initialValues: {
-            email: '',
+            username: '',
             password: '',
 
         },
         validationSchema: yup.object({
-            email: yup.string().email('please provide a valid email').required('Email is required'),
+            username: yup.string().required('username is required'),
             password: yup.string().min(6, 'please provide a password').max(10, 'please enter character between 6 to 15').required('Password is required')
         }),
-        onSubmit: (values) => {
-            console.log(values)
-            if(values.email === database.username && values.password === database.password){
-             
+        onSubmit: async(values) => {
+            const res = await axios.post('http://localhost:7000/login', values)
+            console.log(res.data.user)
+
+            if(res.data.user){
+                localStorage.setItem("user", JSON.stringify(res.data.user))
+                alert('You are Loged in')
+                navigate("/Fleet", { replace: true });
             }
+            if(!res.data.user)
+            {
+                alert('User not Found! Please create an account')
+            }
+            
+
+
         }
     })
 
-const navigate = useNavigate();
-const goToDashboard = ()=>{
-    navigate('/Dashboard');
-};
+
 
     return (
         <div className='login-form-wrapper'>
@@ -44,16 +54,17 @@ const goToDashboard = ()=>{
                 <h2>Welcome Back</h2>
                 <p>A beautiful and powerful system for driving school</p>
                 <form onSubmit={handleSubmit}>
-                    <label for="uname">Email Address</label><br></br>
-                    <input type="email" name="email" onChange={handleChange} onBlur={handleBlur} value={values.email} required /><br />
-                    <p style={{ color: "red" }}>{touched.email && errors ? errors.email : null}</p>
+                    <label for="uname">Username</label><br></br>
+                    <input type="text" name="username" onChange={handleChange} onBlur={handleBlur} value={values.username} required /><br />
+                    <p style={{ color: "red" }}>{touched.username && errors ? errors.username : null}</p>
+
                     <label for="password">Password</label><br></br>
                     <input type="password" name="password" onChange={handleChange} onBlur={handleBlur} value={values.password} required /><br /><br />
                     <p style={{ color: "red" }}>{touched.password && errors ? errors.password : null}</p>
-                 <button onClick={()=> goToDashboard()} className='btn' type="submit" class="btn btn-primary">Login Now</button>
+
+                 <button className='btn' type="submit" class="btn btn-primary">Login Now</button>
                     <ul className='accounts'>
-                        <li><Link to='/Account'>Create Account</Link></li>
-                        <li><Link to='/Password'>forget password?</Link></li>
+                        <li><Link to='/'>Create Account</Link></li>
                     </ul>
                 </form>
             </div>

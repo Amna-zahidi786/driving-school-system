@@ -9,14 +9,14 @@
 .create-account-wrapper
 {
    position: fixed;
-   top: 2%;
+   top: 5%;
    left: 50%;
    transform: translate(-50%);
 }
 .create-account-wrapper img
 {
     width: 20%;
-    height: 20%;
+    height: 10%;
 }
 .create-account-wrapper h2
 {
@@ -40,15 +40,14 @@
 {
     padding: 4px 114px;
 }
-.create-account-wrapper ul li
+.create-account-wrapper li 
 {
     list-style-type: none;
+    margin-top: 12px;
 }
-.create-account-wrapper ul li link
+.create-account-wrapper li a
 {
     text-decoration: none;
-    margin-left: 42px;
 }
-
 
 
